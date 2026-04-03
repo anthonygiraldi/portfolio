@@ -1189,3 +1189,186 @@ section p {
 .project-expand-btn.open .expand-arrow {
     transform: rotate(180deg);
 }
+
+/* ── Hamburger Button ───────────────────────────── */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #ccc;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.nav-hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile ───────────────────────────── */
+@media (max-width: 768px) {
+    /* Nav */
+    nav {
+        grid-template-columns: 1fr auto;
+        padding: 0 20px;
+    }
+
+    .nav-hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: rgba(42, 43, 42, 0.98);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        flex-direction: column;
+        padding: 16px 20px;
+        gap: 4px;
+        border-bottom: 1px solid rgba(216, 104, 109, 0.2);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 14px;
+        border-radius: 8px;
+    }
+
+    /* Homepage hero */
+    .hero-v2 {
+        padding: 80px 24px 60px;
+    }
+
+    .hero-v2-content {
+        flex-direction: column-reverse;
+        gap: 36px;
+        text-align: center;
+    }
+
+    .hero-v2-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-name {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .role-wrapper {
+        font-size: 18px;
+    }
+
+    .photo-ring {
+        width: 220px;
+        height: 220px;
+    }
+
+    .profile-photo-v2 {
+        width: 190px;
+        height: 190px;
+    }
+
+    /* About page */
+    .about-page-v2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about-intro-v2 {
+        padding: 40px 0 48px;
+    }
+
+    .about-heading {
+        font-size: 40px;
+        letter-spacing: -0.5px;
+    }
+
+    .about-bio {
+        font-size: 16px !important;
+    }
+
+    .about-stats {
+        gap: 28px;
+        flex-wrap: wrap;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    /* Contact page */
+    .contact-page {
+        height: auto;
+        min-height: calc(100vh - 64px);
+        padding: 48px 20px 60px;
+        align-items: flex-start;
+    }
+
+    .contact-heading {
+        font-size: 38px;
+    }
+
+    /* Projects page */
+    .projects-page {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .project-card {
+        padding: 24px;
+    }
+
+    .project-card-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .project-title {
+        font-size: 22px;
+    }
+
+    .project-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    /* Resume page */
+    .resume-page {
+        padding: 100px 20px 60px;
+    }
+}

@@ -87,6 +87,22 @@ if (roleEl) {
     type();
 }
 
+// Mobile nav toggle
+function toggleNav() {
+    const links = document.querySelector('.nav-links');
+    const btn = document.querySelector('.nav-hamburger');
+    links.classList.toggle('open');
+    btn.classList.toggle('open');
+}
+
+// Close nav when a link is clicked on mobile
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.nav-links')?.classList.remove('open');
+        document.querySelector('.nav-hamburger')?.classList.remove('open');
+    });
+});
+
 // Copy phone number
 function copyPhone() {
     navigator.clipboard.writeText('303-501-2470').then(() => {
