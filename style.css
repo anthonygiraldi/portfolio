@@ -1264,7 +1264,9 @@ section p {
 
     /* Homepage hero */
     .hero-v2 {
-        padding: 80px 24px 40px;
+        padding: 88px 24px 40px;
+        justify-content: flex-start;
+        min-height: unset;
     }
 
     .hero-v2-content {
