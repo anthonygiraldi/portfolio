@@ -103,6 +103,22 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
+// Resume download
+function downloadResume() {
+    fetch('images/Resume-04-03-26.png')
+        .then(res => res.blob())
+        .then(blob => {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Anthony-Giraldi-Resume.png';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+}
+
 // Copy phone number
 function copyPhone() {
     navigator.clipboard.writeText('303-501-2470').then(() => {
