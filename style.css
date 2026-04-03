@@ -1264,12 +1264,12 @@ section p {
 
     /* Homepage hero */
     .hero-v2 {
-        padding: 80px 24px 60px;
+        padding: 80px 24px 40px;
     }
 
     .hero-v2-content {
         flex-direction: column-reverse;
-        gap: 36px;
+        gap: 20px;
         text-align: center;
     }
 
@@ -1292,27 +1292,15 @@ section p {
         font-size: 18px;
     }
 
-    .hero-ctas {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .cta-primary,
-    .cta-secondary {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-    }
 
     .photo-ring {
-        width: 220px;
-        height: 220px;
+        width: 160px;
+        height: 160px;
     }
 
     .profile-photo-v2 {
-        width: 190px;
-        height: 190px;
+        width: 140px;
+        height: 140px;
     }
 
     /* About page */
