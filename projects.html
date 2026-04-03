@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Anthony Giraldi - Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-transition"></div>
+    <div id="particles-js"></div>
+    <nav>
+        <a href="index.html" class="nav-logo">AG<span>.</span></a>
+        <div class="nav-links">
+            <a href="about.html">About Me</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <main class="projects-page">
+
+        <section class="projects-intro">
+            <p class="about-label">Work</p>
+            <h1 class="about-heading">My <span class="accent">Projects</span></h1>
+            <p class="projects-sub">A collection of data, systems, and software work.</p>
+        </section>
+
+        <section class="projects-grid">
+
+            <!-- NFL Sentiment Analysis -->
+            <div class="project-card fade-in" data-delay="0">
+                <div class="project-card-header">
+                    <div class="project-status">In Progress</div>
+                    <div class="project-type">Data / NLP</div>
+                </div>
+
+                <h2 class="project-title">NFL Sentiment Analysis</h2>
+                <p class="project-desc">Scraped over 17,000 ESPN and NFL team articles on 93 NFL players using Python and BeautifulSoup, then compared quantitative on-field performance data against qualitative media sentiment to determine whether press coverage aligns with actual results. Sentiment scored using DeBERTa.</p>
+
+                <div class="project-visual-placeholder">
+                    <span>Visuals coming soon</span>
+                </div>
+
+                <div class="project-tech-area">
+                    <div class="project-tech">
+                        <span class="tag">Python</span>
+                        <span class="tag">BeautifulSoup</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">DB Browser</span>
+                        <span class="tag">DeBERTa</span>
+                    </div>
+                    <div class="project-expand-content">
+                        <p class="project-expand-desc">We used <strong>BeautifulSoup</strong> to scrape ESPN and NFL articles, structured and stored the data in <strong>MongoDB</strong>, cleaned and analyzed it with <strong>Pandas</strong> using <strong>DB Browser</strong> for inspection, then ran sentiment scoring through <strong>DeBERTa</strong> to quantify how media portrayed each player against their on-field stats.</p>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <div class="project-meta">
+                        <span class="project-collab">Group Project</span>
+                        <span class="project-link-placeholder">GitHub coming soon</span>
+                    </div>
+                    <button class="project-expand-btn" onclick="toggleExpand(this)">
+                        <span class="expand-label">How it was built</span>
+                        <span class="expand-arrow">↓</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- FitFinder -->
+            <div class="project-card fade-in" data-delay="150">
+                <div class="project-card-header">
+                    <div class="project-status">In Progress</div>
+                    <div class="project-type">Full Stack / Web</div>
+                </div>
+
+                <h2 class="project-title">FitFinder</h2>
+                <p class="project-desc">A social fashion discovery app where users can browse, share, and create outfit posts. Built with React and Vite, featuring Clerk authentication, GSAP-animated navigation, and a gallery feed of community outfits.</p>
+
+                <div class="project-visual-placeholder">
+                    <span>Visuals coming soon</span>
+                </div>
+
+                <div class="project-tech-area">
+                    <div class="project-tech">
+                        <span class="tag">React</span>
+                        <span class="tag">Vite</span>
+                        <span class="tag">Clerk</span>
+                        <span class="tag">GSAP</span>
+                        <span class="tag">React Router</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <div class="project-expand-content">
+                        <p class="project-expand-desc">Built with <strong>React</strong> and <strong>Vite</strong> for a fast, component-driven frontend, <strong>React Router</strong> for navigation, <strong>Clerk</strong> for authentication, and <strong>GSAP</strong> for the animated navbar. Styled with plain <strong>CSS</strong> modules.</p>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <div class="project-meta">
+                        <span class="project-collab">Group Project</span>
+                        <a href="https://github.com/Colemichael16/FitFinder" target="_blank" class="project-link">GitHub →</a>
+                    </div>
+                    <button class="project-expand-btn" onclick="toggleExpand(this)">
+                        <span class="expand-label">How it was built</span>
+                        <span class="expand-arrow">↓</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- PitchPerfect -->
+            <div class="project-card fade-in" data-delay="300">
+                <div class="project-card-header">
+                    <div class="project-status">In Progress</div>
+                    <div class="project-type">Mobile / AI</div>
+                </div>
+
+                <h2 class="project-title">PitchPerfect</h2>
+                <p class="project-desc">A mobile app marketed to students through university partnerships that uses AI to analyze public speaking and deliver personalized feedback. Designed to help students improve confidence, clarity, and delivery over time.</p>
+
+                <div class="project-visual-placeholder">
+                    <span>Visuals coming soon</span>
+                </div>
+
+                <div class="project-tech-area">
+                    <div class="project-tech">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Speech-to-Text</span>
+                        <span class="tag">AI API</span>
+                    </div>
+                    <div class="project-expand-content">
+                        <p class="project-expand-desc">Planned as a mobile app using <strong>React Native</strong>, with <strong>Speech-to-Text</strong> to transcribe recordings and an <strong>AI API</strong> to analyze delivery and generate personalized feedback for students.</p>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <div class="project-meta">
+                        <span class="project-collab">Group Project</span>
+                        <span class="project-link-placeholder">GitHub coming soon</span>
+                    </div>
+                    <button class="project-expand-btn" onclick="toggleExpand(this)">
+                        <span class="expand-label">How it was built</span>
+                        <span class="expand-arrow">↓</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
