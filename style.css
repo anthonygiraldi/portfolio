@@ -1191,6 +1191,25 @@ section p {
     transform: rotate(180deg);
 }
 
+/* ── 404 Page ───────────────────────────── */
+.not-found-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 64px 80px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.not-found-sub {
+    font-size: 18px !important;
+    color: #777 !important;
+    margin: 0 0 40px 0 !important;
+    max-width: none !important;
+}
+
 /* ── Hamburger Button ───────────────────────────── */
 .nav-hamburger {
     display: none;

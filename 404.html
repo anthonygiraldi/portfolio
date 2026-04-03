@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>404 — Anthony Giraldi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-transition"></div>
+    <div id="particles-js"></div>
+    <nav>
+        <a href="index.html" class="nav-logo">AG<span>.</span></a>
+        <div class="nav-links">
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+        <button class="nav-hamburger" onclick="toggleNav()" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main class="not-found-page">
+        <p class="about-label">404</p>
+        <h1 class="about-heading">Page <span class="accent">Not Found</span></h1>
+        <p class="not-found-sub">Looks like this page doesn't exist.</p>
+        <a href="index.html" class="cta-primary">Back to Home</a>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
