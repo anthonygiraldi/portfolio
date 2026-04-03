@@ -1191,6 +1191,18 @@ section p {
     transform: rotate(180deg);
 }
 
+/* ── Footer ───────────────────────────── */
+footer {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 24px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 13px;
+    color: #444;
+    font-family: Inter, sans-serif;
+}
+
 /* ── 404 Page ───────────────────────────── */
 .not-found-page {
     display: flex;
