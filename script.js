@@ -1,3 +1,7 @@
+// Prevent browser scroll restoration
+history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+
 // Spotlight effect
 document.addEventListener('mousemove', e => {
     document.body.style.backgroundImage = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(216, 104, 109, 0.06), transparent 70%)`;
