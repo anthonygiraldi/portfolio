@@ -1292,6 +1292,19 @@ section p {
         font-size: 18px;
     }
 
+    .hero-ctas {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
     .photo-ring {
         width: 220px;
         height: 220px;
