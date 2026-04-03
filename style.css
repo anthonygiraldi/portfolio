@@ -1292,6 +1292,12 @@ section p {
         font-size: 18px;
     }
 
+    .hero-ctas .cta-primary,
+    .hero-ctas .cta-secondary {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
 
     .photo-ring {
         width: 160px;
