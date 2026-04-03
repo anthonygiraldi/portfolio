@@ -10,5 +10,15 @@
   },
   "compatibility_flags": [
     "nodejs_compat"
+  ],
+  "routes": [
+    {
+      "pattern": "anthony-giraldi.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.anthony-giraldi.com",
+      "custom_domain": true
+    }
   ]
 }
