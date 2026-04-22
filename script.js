@@ -134,6 +134,23 @@ function copyPhone() {
 }
 
 // Project expand toggle
+function shiftSlide(carouselId, direction) {
+    const carousel = document.getElementById(carouselId);
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const total = dots.length;
+    let current = 0;
+    dots.forEach((d, i) => { if (d.classList.contains('active')) current = i; });
+    goToSlide(carouselId, (current + direction + total) % total);
+}
+
+function goToSlide(carouselId, index) {
+    const carousel = document.getElementById(carouselId);
+    const track = carousel.querySelector('.carousel-track');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    track.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === index));
+}
+
 function toggleExpand(btn) {
     const card = btn.closest('.project-card');
     const tags = card.querySelector('.project-tech');

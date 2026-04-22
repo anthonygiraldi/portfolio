@@ -53,15 +53,24 @@
             <!-- NFL Sentiment Analysis -->
             <div class="project-card fade-in" data-delay="0">
                 <div class="project-card-header">
-                    <div class="project-status">In Progress</div>
+                    <div class="project-status completed">Completed</div>
                     <div class="project-type">Data / NLP</div>
                 </div>
 
                 <h2 class="project-title">NFL Sentiment Analysis</h2>
                 <p class="project-desc">Scraped over 17,000 ESPN and NFL team articles on 93 NFL players using Python and BeautifulSoup, then compared quantitative on-field performance data against qualitative media sentiment to determine whether press coverage aligns with actual results. Sentiment scored using DeBERTa.</p>
 
-                <div class="project-visual-placeholder">
-                    <span>Visuals coming soon</span>
+                <div class="project-carousel carousel-light" id="carousel-nfl">
+                    <button class="carousel-arrow carousel-arrow-prev" onclick="shiftSlide('carousel-nfl', -1)">&#8249;</button>
+                    <button class="carousel-arrow carousel-arrow-next" onclick="shiftSlide('carousel-nfl', 1)">&#8250;</button>
+                    <div class="carousel-track">
+                        <img src="images/nfl-sentiment-scatter.png" alt="Media Sentiment vs. Approximate Value correlation scatter plot" class="carousel-img">
+                        <img src="images/nfl-sentiment-histogram.png" alt="Distribution of Sentiment Scores Across All Players histogram" class="carousel-img">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="carousel-dot active" onclick="goToSlide('carousel-nfl', 0)"></button>
+                        <button class="carousel-dot" onclick="goToSlide('carousel-nfl', 1)"></button>
+                    </div>
                 </div>
 
                 <div class="project-tech-area">
@@ -81,7 +90,7 @@
                 <div class="project-bottom">
                     <div class="project-meta">
                         <span class="project-collab">Group Project</span>
-                        <span class="project-link-placeholder">GitHub coming soon</span>
+                        <a href="https://jaclynreavespereira.wixsite.com/my-site-4" target="_blank" class="project-link">View Project →</a>
                     </div>
                     <button class="project-expand-btn" onclick="toggleExpand(this)">
                         <span class="expand-label">How it was built</span>
@@ -93,15 +102,24 @@
             <!-- FitFinder -->
             <div class="project-card fade-in" data-delay="150">
                 <div class="project-card-header">
-                    <div class="project-status">In Progress</div>
+                    <div class="project-status completed">Completed</div>
                     <div class="project-type">Full Stack / Web</div>
                 </div>
 
                 <h2 class="project-title">FitFinder</h2>
                 <p class="project-desc">A social fashion discovery app where users can browse, share, and create outfit posts. Built with React and Vite, featuring Clerk authentication, GSAP-animated navigation, and a gallery feed of community outfits.</p>
 
-                <div class="project-visual-placeholder">
-                    <span>Visuals coming soon</span>
+                <div class="project-carousel" id="carousel-fitfinder">
+                    <button class="carousel-arrow carousel-arrow-prev" onclick="shiftSlide('carousel-fitfinder', -1)">&#8249;</button>
+                    <button class="carousel-arrow carousel-arrow-next" onclick="shiftSlide('carousel-fitfinder', 1)">&#8250;</button>
+                    <div class="carousel-track">
+                        <img src="images/fitfinder-home.png" alt="FitFinder homepage with outfit gallery" class="carousel-img">
+                        <img src="images/fitfinder-create.png" alt="FitFinder create new outfit page" class="carousel-img">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="carousel-dot active" onclick="goToSlide('carousel-fitfinder', 0)"></button>
+                        <button class="carousel-dot" onclick="goToSlide('carousel-fitfinder', 1)"></button>
+                    </div>
                 </div>
 
                 <div class="project-tech-area">
@@ -121,6 +139,7 @@
                 <div class="project-bottom">
                     <div class="project-meta">
                         <span class="project-collab">Group Project</span>
+                        <a href="https://fit-finder.org/" target="_blank" class="project-link">View Project →</a>
                         <a href="https://github.com/Colemichael16/FitFinder" target="_blank" class="project-link">GitHub →</a>
                     </div>
                     <button class="project-expand-btn" onclick="toggleExpand(this)">
@@ -133,32 +152,42 @@
             <!-- PitchPerfect -->
             <div class="project-card fade-in" data-delay="300">
                 <div class="project-card-header">
-                    <div class="project-status">In Progress</div>
-                    <div class="project-type">Mobile / AI</div>
+                    <div class="project-status completed">Completed</div>
+                    <div class="project-type">Entrepreneurship / Design</div>
                 </div>
 
                 <h2 class="project-title">PitchPerfect</h2>
-                <p class="project-desc">A mobile app marketed to students through university partnerships that uses AI to analyze public speaking and deliver personalized feedback. Designed to help students improve confidence, clarity, and delivery over time.</p>
+                <p class="project-desc">A concept mobile app developed for an entrepreneurship class at CU Boulder. Built out a full business plan targeting university students, created a pitch deck, and presented the idea to a panel — covering market opportunity, go-to-market strategy, and a revenue model built around university partnerships.</p>
 
-                <div class="project-visual-placeholder">
-                    <span>Visuals coming soon</span>
+                <div class="project-carousel carousel-light" id="carousel-pitchperfect">
+                    <button class="carousel-arrow carousel-arrow-prev" onclick="shiftSlide('carousel-pitchperfect', -1)">&#8249;</button>
+                    <button class="carousel-arrow carousel-arrow-next" onclick="shiftSlide('carousel-pitchperfect', 1)">&#8250;</button>
+                    <div class="carousel-track">
+                        <img src="images/pitchperfect-logo.png" alt="PitchPerfect logo" class="carousel-img">
+                        <img src="images/pitchperfect-feedback.png" alt="PitchPerfect app feedback screen showing confidence score and recommendations" class="carousel-img">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="carousel-dot active" onclick="goToSlide('carousel-pitchperfect', 0)"></button>
+                        <button class="carousel-dot" onclick="goToSlide('carousel-pitchperfect', 1)"></button>
+                    </div>
                 </div>
 
                 <div class="project-tech-area">
                     <div class="project-tech">
-                        <span class="tag">React Native</span>
-                        <span class="tag">Speech-to-Text</span>
-                        <span class="tag">AI API</span>
+                        <span class="tag">Business Plan</span>
+                        <span class="tag">Pitch Deck</span>
+                        <span class="tag">Market Research</span>
+                        <span class="tag">Public Speaking</span>
                     </div>
                     <div class="project-expand-content">
-                        <p class="project-expand-desc">Planned as a mobile app using <strong>React Native</strong>, with <strong>Speech-to-Text</strong> to transcribe recordings and an <strong>AI API</strong> to analyze delivery and generate personalized feedback for students.</p>
+                        <p class="project-expand-desc">Developed the concept from the ground up — researched the market, defined the target user, and built out a <strong>business plan</strong> covering pricing, partnerships, and growth strategy. Packaged everything into a <strong>pitch deck</strong> and presented it live to a panel, walking through the problem, solution, and go-to-market approach.</p>
                     </div>
                 </div>
 
                 <div class="project-bottom">
                     <div class="project-meta">
                         <span class="project-collab">Group Project</span>
-                        <span class="project-link-placeholder">GitHub coming soon</span>
+                        <a href="images/company-pitch.pdf" target="_blank" class="project-link">View Deck →</a>
                     </div>
                     <button class="project-expand-btn" onclick="toggleExpand(this)">
                         <span class="expand-label">How it was built</span>
